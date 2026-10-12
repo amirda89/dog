@@ -9,12 +9,14 @@
       sizes="any"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Dog</title>
   </head>
   <body>
     <div id="header"></div>
+    <div id="hero"></div>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       function loadComponent(path, id) {
         fetch(path)
@@ -22,10 +24,12 @@
           .then((text) => {
             const doc = new DOMParser().parseFromString(text, "text/html");
             document.getElementById(id).innerHTML = doc.body.innerHTML;
+            lucide.createIcons();
           });
       }
 
       loadComponent("./components/header.html", "header");
+      loadComponent("./components/hero.html", "hero");
     </script>
   </body>
 </html>
