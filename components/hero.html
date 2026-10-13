@@ -7,7 +7,7 @@
   </head>
   <body>
     <div
-      class="w-[390px] mx-auto px-[24px] pt-[20px] bg-[#F6FBF6] shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)] xl:w-[1280px]"
+      class="w-[390px] mx-auto px-[24px] pt-[20px] bg-[#F6FBF6] shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)] xl:w-[1280px] xl:px-[48px] xl:pt-[32px] dark:bg-[rgba(0,0,0,0.9)]"
     >
       <!-- MOBILE -->
       <div class="xl:hidden">
@@ -128,10 +128,10 @@
       </div>
 
       <!-- DESKTOP -->
-      <div class="flex">
+      <div class="hidden xl:flex justify-between">
         <div class="w-[466px]">
           <div
-            class="flex items-center gap-[8px] font-[Plus Jakarta Sans] font-medium text-[12px] leading-[16px] tracking-normal text-[#2E1500] px-[16px] py-[6px] bg-[#FFDCC1] rounded-2xl shadow-sm w-[135px]"
+            class="flex items-center gap-[8px] font-[Plus Jakarta Sans] font-medium text-[12px] leading-[16px] tracking-normal text-[#2E1500] px-[16px] py-[6px] bg-[#FFDCC1] rounded-2xl shadow-sm w-[135px] mt-[9px] dark:gap-0 dark:text-[#FFC174] dark:py-[4px] dark:bg-[#282A29]"
           >
             <i
               data-lucide="paw-print"
@@ -139,27 +139,28 @@
               height="13"
               color="#2E1500"
               stroke-width="4"
+              class="dark:hidden"
             ></i
-            >Daily Joy Feed
+            ><span class="hidden dark:flex">🐾</span>Daily Joy Feed
           </div>
           <h1
-            class="font-[Plus Jakarta Sans] font-bold text-[48px] leading-[60px] tracking-[-1.2px] text-[#181D1A]"
+            class="font-[Plus Jakarta Sans] font-bold text-[48px] leading-[60px] tracking-[-1.2px] text-[#181D1A] mt-[24px] dark:text-[#E2E3E0]"
           >
             Meet a New
             <span
-              class="underline text-[#8D4B00] decoration-[#181D1A] decoration-2 underline-offset-4"
+              class="underline text-[#8D4B00] decoration-[#181D1A] decoration-2 underline-offset-4 dark:text-[#F59E0B] dark:decoration-[#F59E0B]"
               >Friend</span
             >
           </h1>
           <p
-            class="font-[Plus Jakarta Sans] font-normal text-[18px] leading-[28px] tracking-normal text-[#554336]"
+            class="font-[Plus Jakarta Sans] font-normal text-[18px] leading-[28px] tracking-normal text-[#554336] mt-[16px] dark:text-[#D8C3AD]"
           >
             Discover dogs from around the world, one adorable face at a time.
             Pure companionship, heart-melting grins, and gentle spirits.
           </p>
-          <div class="flex gap-[16px]">
+          <div class="flex gap-[16px] mt-[32px]">
             <button
-              class="text-white bg-[#8D4B00] rounded-3xl flex items-center gap-[12px] px-[28px] py-[14px] font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal"
+              class="text-white bg-[#8D4B00] rounded-3xl flex items-center gap-[12px] px-[28px] py-[14px] font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal dark:text-[#613B00] dark:bg-[#F59E0B]"
             >
               <i
                 data-lucide="refresh-ccw"
@@ -167,16 +168,31 @@
                 height="18"
                 stroke-width="3"
                 color="white"
+                class="dark:hidden"
+              ></i>
+              <i
+                data-lucide="shuffle"
+                width="13"
+                height="13"
+                stroke-width="3"
+                color="#613B00"
+                class="hidden dark:block"
               ></i
               >Show Another
             </button>
             <button
-              class="bg-[#E5E9E4] rounded-3xl font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal text-[#181D1A] px-[28px] py-[14px]"
+              class="bg-[#E5E9E4] rounded-3xl font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-normal text-[#181D1A] px-[28px] py-[14px] flex gap-[4px] dark:text-white dark:bg-[#1E201F] items-center"
             >
-              Explore Breeds
+              Explore Breeds<i
+                data-lucide="move-down"
+                width="10"
+                height="15"
+                color="#E2E3E0"
+                stroke-width="3"
+              ></i>
             </button>
           </div>
-          <div class="flex w-full gap-[12px]">
+          <div class="flex w-full gap-[12px] mt-[40px] dark:hidden">
             <div
               class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1"
             >
@@ -185,6 +201,7 @@
                 color="#8D4B00"
                 width="20"
                 height="20"
+                stroke-width="3"
               ></i>
               <p class="text-[11px] text-[#887364]">Friendliness</p>
               <p class="text-[12px] text-[#181D1A]">10 / 10</p>
@@ -192,28 +209,145 @@
             <div
               class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1"
             >
-              <i data-lucide="zap" color="#8D4B00" width="16" height="20"></i>
+              <i
+                data-lucide="zap"
+                color="#8D4B00"
+                width="16"
+                height="20"
+                stroke-width="3"
+              ></i>
               <p class="text-[11px] text-[#887364]">Energy Level</p>
               <p class="text-[12px] text-[#181D1A]">Vibrant</p>
             </div>
           </div>
+          <div class="flex gap-[16px] mt-[32px] font-[Plus Jakarta Sans]">
+            <div
+              class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]"
+            >
+              <div
+                class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal"
+              >
+                Friendliness<i
+                  data-lucide="face-slightly-smiling"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p
+                class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]"
+              >
+                10 / 10
+              </p>
+              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+            </div>
+            <div
+              class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]"
+            >
+              <div
+                class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal"
+              >
+                Energy Level
+                <i
+                  data-lucide="zap"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p
+                class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]"
+              >
+                Vibrant
+              </p>
+              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+            </div>
+            <div
+              class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]"
+            >
+              <div
+                class="flex flex-1 justify-between items-center text-[#D8C3AD] font-medium text-[11px] leading-[14px] tracking-normal"
+              >
+                Mood Boost
+                <i
+                  data-lucide="flame"
+                  color="#FFC174"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                ></i>
+              </div>
+              <p
+                class="font-medium text-[20px] leading-[28px] tracking-normal text-[#E2E3E0]"
+              >
+                Instant
+              </p>
+              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+            </div>
+          </div>
         </div>
-        <div>
+        <div class="w-[653px] flex justify-center">
           <div
-            class="rounded-[24px] bg-white shadow-[0px_20px_50px_0px_#4028141F] p-[12px]"
+            class="rounded-[24px] bg-white shadow-[0px_20px_50px_0px_#4028141F] p-[12px] w-[576px] dark:w-[483px] dark:rounded-[32px] dark:p-[16px] dark:bg-[#1E201F]"
           >
             <div
-              class="rounded-[16px] opacity-80 bg-[linear-gradient(0deg,rgba(44,50,46,0.7)_0%,rgba(44,50,46,0)_50%,rgba(44,50,46,0)_100%)]"
+              class="rounded-[16px] relative opacity-80 bg-[linear-gradient(0deg,rgba(44,50,46,0.7)_0%,rgba(44,50,46,0)_50%,rgba(44,50,46,0)_100%)] w-[552px] h-[408px] dark:rounded-[32px] dark:w-[451px] dark:h-[420px]"
             >
-              <img src="" alt="" />
-              <div><i></i></div>
-              <div class="flex">
+              <div
+                id="heroImageDesktop"
+                class="absolute inset-0 overflow-hidden"
+              >
+                <!-- GENERATED -->
+              </div>
+              <div
+                class="flex gap-[8px] items-center px-[16px] py-[8px] dark:py-[4px] dark:bg-[rgba(26,28,27,0.8)] rounded-3xl bg-white font-[Plus Jakarta Sans] font-medium text-[14px] leading-[20px] tracking-[0.35px] text-[#181D1A] absolute top-[16px] left-[16px] dark:text-[12px] dark:leading-[16px] dark:tracking-normal dark:text-[#E2E3E0]"
+              >
+                <i
+                  data-lucide="paw-print"
+                  width="15"
+                  height="15"
+                  color="#8D4B00"
+                  stroke-width="3"
+                  class="dark:hidden"
+                ></i>
+                <div
+                  class="rounded-full bg-[#F59E0B] hidden dark:flex w-[8px] h-[8px]"
+                ></div>
+                Golden Retriever
+              </div>
+              <div
+                class="hidden dark:flex absolute top-[16px] right-[16px] rounded-3xl bg-[#F59E0B] font-[Plus Jakarta Sans] py-[4px] px-[16px] text-[#613B00] text-[11px] leading-[14px] tracking-normal font-medium"
+              >
+                Gentle Giant
+              </div>
+              <div class="flex absolute left-[16px] bottom-[16px] w-[520px]">
                 <div class="font-[Plus Jakarta Sans]">
-                  <h3>Sunny Cooper</h3>
-                  <p>Gentle companion • Loves afternoon park fetch</p>
+                  <h3
+                    class="font-semibold text-[22px] leading-[30px] tracking-[-0.55px] text-white"
+                  >
+                    Sunny Cooper
+                  </h3>
+                  <p
+                    class="font-normal text-[14px] leading-[20px] tracking-normal text-white"
+                  >
+                    Gentle companion • Loves afternoon park fetch
+                  </p>
                 </div>
-                <div>
-                  <div><i></i>Gentle Giant</div>
+                <div class="flex items-center justify-end flex-1">
+                  <div
+                    class="bg-[rgba(255,255,255,0.2)] rounded-3xl flex gap-[6px] px-[12px] py-[4px] text-white font-medium text-[11px] leading-[14px] tracking-normal dark:hidden"
+                  >
+                    <i
+                      data-lucide="badge-check"
+                      width="14"
+                      height="14"
+                      stroke-width="3"
+                      color="#FFDCC1"
+                    ></i
+                    >Gentle Giant
+                  </div>
                 </div>
               </div>
             </div>
