@@ -7,7 +7,7 @@
   </head>
   <body>
     <div
-      class="w-[390px] mx-auto px-[24px] pt-[20px] bg-[#F6FBF6] shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)] xl:w-[1280px] xl:px-[48px] xl:pt-[32px] dark:bg-[rgba(0,0,0,0.9)]"
+      class="w-[390px] mx-auto px-[24px] pt-[20px] pb-[32px] bg-[#F6FBF6] xl:w-[1280px] xl:px-[48px] xl:pt-[32px] dark:bg-[rgba(0,0,0,0.9)]"
     >
       <!-- MOBILE -->
       <div class="xl:hidden">
@@ -26,7 +26,9 @@
         >
           Discover dogs from around the world, one adorable face at a time.
         </p>
-        <div class="rounded-3xl w-[342px] overflow-hidden bg-white">
+        <div
+          class="rounded-3xl w-[342px] overflow-hidden bg-white shadow-[0px_12px_32px_0px_rgba(64,40,20,0.08)]"
+        >
           <div class="w-full bg-cover relative h-[384px] bg-center">
             <div id="heroImage" class="absolute inset-0 overflow-hidden">
               <!-- GENERATED -->
@@ -131,7 +133,7 @@
       <div class="hidden xl:flex justify-between">
         <div class="w-[466px]">
           <div
-            class="flex items-center gap-[8px] font-[Plus Jakarta Sans] font-medium text-[12px] leading-[16px] tracking-normal text-[#2E1500] px-[16px] py-[6px] bg-[#FFDCC1] rounded-2xl shadow-sm w-[135px] mt-[9px] dark:gap-0 dark:text-[#FFC174] dark:py-[4px] dark:bg-[#282A29]"
+            class="flex items-center gap-[8px] font-[Plus Jakarta Sans] font-medium text-[12px] leading-[16px] tracking-normal text-[#2E1500] px-[16px] py-[6px] bg-[#FFDCC1] rounded-2xl shadow-sm w-[137px] mt-[9px] dark:gap-0 dark:text-[#FFC174] dark:py-[4px] dark:bg-[#282A29]"
           >
             <i
               data-lucide="paw-print"
@@ -189,12 +191,13 @@
                 height="15"
                 color="#E2E3E0"
                 stroke-width="3"
+                class="hidden dark:flex"
               ></i>
             </button>
           </div>
           <div class="flex w-full gap-[12px] mt-[40px] dark:hidden">
             <div
-              class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1"
+              class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1 bg-white justify-center rounded-2xl shadow-[0px_1px_2px_0px_#0000000D]"
             >
               <i
                 data-lucide="face-slightly-smiling"
@@ -207,7 +210,7 @@
               <p class="text-[12px] text-[#181D1A]">10 / 10</p>
             </div>
             <div
-              class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1"
+              class="flex flex-col items-center font-[Plus Jakarta Sans] font-medium h-[82px] flex-1 bg-white justify-center rounded-2xl shadow-[0px_1px_2px_0px_#0000000D]"
             >
               <i
                 data-lucide="zap"
@@ -220,7 +223,9 @@
               <p class="text-[12px] text-[#181D1A]">Vibrant</p>
             </div>
           </div>
-          <div class="flex gap-[16px] mt-[32px] font-[Plus Jakarta Sans]">
+          <div
+            class="hidden dark:flex gap-[16px] mt-[32px] font-[Plus Jakarta Sans]"
+          >
             <div
               class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]"
             >
@@ -262,7 +267,13 @@
               >
                 Vibrant
               </p>
-              <div class="bg-[#F59E0B] rounded-3xl flex w-full h-[8px]"></div>
+              <div
+                class="bg-[#282A29] w-full flex h-[8px] relative rounded-3xl"
+              >
+                <div
+                  class="bg-[#F59E0B] rounded-3xl flex w-[80%] h-[8px] absolute top-0 left-0"
+                ></div>
+              </div>
             </div>
             <div
               class="bg-[#1E201F] rounded-[32px] p-[16px] flex flex-col gap-[4px] w-[160px]"
@@ -322,7 +333,9 @@
               >
                 Gentle Giant
               </div>
-              <div class="flex absolute left-[16px] bottom-[16px] w-[520px]">
+              <div
+                class="flex absolute left-[16px] bottom-[16px] w-[520px] dark:w-[420px]"
+              >
                 <div class="font-[Plus Jakarta Sans]">
                   <h3
                     class="font-semibold text-[22px] leading-[30px] tracking-[-0.55px] text-white"
@@ -330,7 +343,7 @@
                     Sunny Cooper
                   </h3>
                   <p
-                    class="font-normal text-[14px] leading-[20px] tracking-normal text-white"
+                    class="font-normal text-[14px] leading-[20px] tracking-normal text-white dark:text-[#D8C3AD]"
                   >
                     Gentle companion • Loves afternoon park fetch
                   </p>
@@ -348,7 +361,42 @@
                     ></i
                     >Gentle Giant
                   </div>
+                  <div
+                    class="hidden dark:flex bg-[rgba(40,42,41,0.9)] w-[40px] h-[40px] rounded-full items-center justify-center"
+                  >
+                    <i
+                      data-lucide="paw-print"
+                      width="16"
+                      height="16"
+                      color="#FFC174"
+                      stroke-width="3"
+                    ></i>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div
+              class="hidden dark:flex justify-between mt-[16px] font-[Plus Jakarta Sans] font-medium text-[11px] leading-[14px] tracking-normal text-[#D8C3AD]"
+            >
+              <div class="flex items-center gap-[4px]">
+                <i
+                  data-lucide="circle-star"
+                  width="15"
+                  height="15"
+                  stroke-width="3"
+                  color="#FFC174"
+                ></i
+                >AKC Sporting Group
+              </div>
+              <div class="flex items-center gap-[4px]">
+                <i
+                  data-lucide="clock-8"
+                  width="13"
+                  height="13"
+                  stroke-width="3"
+                  color="#FFC174"
+                ></i>
+                10-12 years
               </div>
             </div>
           </div>

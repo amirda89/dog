@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breeds</title>
+  </head>
+  <body>
+    <div
+      class="w-[390px] mx-auto bg-[#F6FBF6] font-[Plus Jakarta Sans] xl:w-[1280px]"
+    >
+      <div
+        class="w-full rounded-t-4xl bg-[#F0F5F0] px-[24px] py-[32px] xl:w-[1280px] xl:rounded-none xl:px-[48px] xl:py-[64px]"
+      >
+        <div
+          class="uppercase font-medium text-[11px] leading-[14px] tracking-[0.55px] text-[#8D4B00]"
+        >
+          🐾 breed compendium
+        </div>
+        <h1
+          class="font-semibold text-[26px] leading-[34px] tracking-[-0.65px] text-[#181D1A] mt-1"
+        >
+          Find Your Favorite Breed
+        </h1>
+        <p
+          class="font-light text-[14px] leading-[20px] tracking-normal text-[#554336] mt-1 mb-5"
+        >
+          Explore signature traits, temperaments, and personalities tailored to
+          your home.
+        </p>
+        <div
+          class="rounded-3xl bg-white shadow-[0_1px 2px_#0000000D] flex items-center justify-between p-[8px] mb-4"
+        >
+          <div class="flex items-center justify-between flex-1 mr-4">
+            <div
+              class="flex items-center pl-[12px] text-[14px] leading-[20px] tracking-normal text-[#181D1A] gap-2"
+            >
+              <i
+                data-lucide="search"
+                width="15"
+                height="15"
+                stroke-width="3"
+                color="#887364"
+              ></i
+              >All Breeds (Selected)
+            </div>
+            <i
+              data-lucide="chevron-down"
+              width="15"
+              height="10"
+              stroke-width="2"
+              color="brown"
+            ></i>
+          </div>
+          <div
+            class="rounded-3xl bg-[#8D4B00] text-white px-4 py-3 text-[12px] leading-[16px] tracking-normal"
+          >
+            Filter
+          </div>
+        </div>
+        <div class="flex gap-2 overflow-hidden items-center">
+          <div
+            class="bg-[#8D4B00] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-white py-[11px] px-4"
+          >
+            🐾 All Breeds
+          </div>
+          <div
+            class="bg-white rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] py-[11px] px-4"
+          >
+            Pembroke Welsh Corgi
+          </div>
+          <div
+            class="bg-white rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336] py-[11px] px-4"
+          >
+            Golden Retriever
+          </div>
+        </div>
+        <div
+          class="bg-[rgba(255,220,193,0.6)] flex items-center justify-between p-[14px] mt-5"
+        >
+          <div
+            class="w-[40px] h-[40px] bg-[#FC9D3D] flex items-center justify-center rounded-full"
+          >
+            <i
+              data-lucide="medal"
+              width="16"
+              height="16"
+              stroke-width="2"
+              color="#6A3900"
+            ></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-[6px]">
+              <div
+                class="font-semibold text-[14px] leading-[20px] tracking-normal text-[#2E1500]"
+              >
+                Pembroke Welsh Corgi
+              </div>
+              <div
+                class="uppercase rounded-3xl bg-[#8D4B00] px-[6px] text-white font-semibold text-[10px] leading-[24px] tracking-normal"
+              >
+                top pick
+              </div>
+            </div>
+            <p
+              class="text-[#6C3A00] text-[11px] leading-[14px] tracking-normal"
+            >
+              Great with Kids & Herding
+            </p>
+          </div>
+          <i
+            data-lucide="move-right"
+            width="16"
+            height="16"
+            stroke-width="3"
+            color="#8D4B00"
+          ></i>
+        </div>
+        <div class="bg-white shadow-[0_1px_2px_#0000000D] mt-5">
+          <div class="relative w-full h-[256px]">
+            <div id="breeds" class="absolute inset-0">
+              <img
+                src="../assets/sunny.jpg"
+                alt="dog"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3"
+            >
+              Pembroke Welsh Corgi
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div class="flex justify-between flex-1">
+              <div
+                class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A]"
+              >
+                Barnaby
+              </div>
+              <div
+                class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1"
+              >
+                <i
+                  data-lucide="face-slightly-smiling"
+                  width="15"
+                  height="15"
+                  stroke-width="3"
+                  color="#8D4B00"
+                ></i>
+                1.4k smiles
+              </div>
+            </div>
+            <div class="flex p-[2px] gap-[6px]">
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Affectionate
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Alert
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Smart
+              </div>
+            </div>
+            <div class="flex items-center flex-1 justify-between">
+              <div
+                class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1"
+              >
+                <i
+                  data-lucide="map-pin"
+                  width="12"
+                  height="15"
+                  stroke-width="2"
+                  color="#887364"
+                ></i
+                >Cotswolds, UK
+              </div>
+              <div
+                class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal"
+              >
+                View Profile<i
+                  data-lucide="chevron-right"
+                  width="10"
+                  height="12"
+                  stroke-width="2"
+                  color="#2E1500"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-[0_1px_2px_#0000000D] my-[20px]">
+          <div class="relative w-full h-[256px]">
+            <div id="breeds" class="absolute inset-0">
+              <img
+                src="../assets/sunny.jpg"
+                alt="dog"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3"
+            >
+              French Bulldog
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div class="flex justify-between flex-1">
+              <div
+                class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A]"
+              >
+                Milo
+              </div>
+              <div
+                class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1"
+              >
+                <i
+                  data-lucide="face-slightly-smiling"
+                  width="15"
+                  height="15"
+                  stroke-width="3"
+                  color="#8D4B00"
+                ></i>
+                2.1k smiles
+              </div>
+            </div>
+            <div class="flex p-[2px] gap-[6px]">
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Quiet
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Loving
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Easygoing
+              </div>
+            </div>
+            <div class="flex items-center flex-1 justify-between">
+              <div
+                class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1"
+              >
+                <i
+                  data-lucide="map-pin"
+                  width="12"
+                  height="15"
+                  stroke-width="2"
+                  color="#887364"
+                ></i
+                >Lyon, France
+              </div>
+              <div
+                class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal"
+              >
+                View Profile<i
+                  data-lucide="chevron-right"
+                  width="10"
+                  height="12"
+                  stroke-width="2"
+                  color="#2E1500"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-[0_1px_2px_#0000000D]">
+          <div class="relative w-full h-[256px]">
+            <div id="breeds" class="absolute inset-0">
+              <img
+                src="../assets/sunny.jpg"
+                alt="dog"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3"
+            >
+              Golden Retriever
+            </div>
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div class="flex justify-between flex-1">
+              <div
+                class="font-medium text-[22px] leading-[30px] tracking-normal text-[#181D1A]"
+              >
+                Archie
+              </div>
+              <div
+                class="flex items-center font-semibold text-[11px] leading-[14px] tracking-normal text-[#8D4B00] gap-1"
+              >
+                <i
+                  data-lucide="face-slightly-smiling"
+                  width="15"
+                  height="15"
+                  stroke-width="3"
+                  color="#8D4B00"
+                ></i>
+                3.8k smiles
+              </div>
+            </div>
+            <div class="flex p-[2px] gap-[6px]">
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Gentle
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Devoted
+              </div>
+              <div
+                class="py-1 px-[10px] bg-[#EBEFEA] rounded-3xl font-medium text-[11px] leading-[14px] tracking-normal text-[#554336]"
+              >
+                Joyous
+              </div>
+            </div>
+            <div class="flex items-center flex-1 justify-between">
+              <div
+                class="flex items-center font-normal text-[14px] leading-[20px] tracking-normal text-[#554336] gap-1"
+              >
+                <i
+                  data-lucide="map-pin"
+                  width="12"
+                  height="15"
+                  stroke-width="2"
+                  color="#887364"
+                ></i
+                >Seattwe, WA
+              </div>
+              <div
+                class="rounded-3xl bg-[rgba(255,220,193,0.5)] gap-1 py-[11px] px-[14px] flex items-center text-[11px] leading-[14px] tracking-normal"
+              >
+                View Profile<i
+                  data-lucide="chevron-right"
+                  width="10"
+                  height="12"
+                  stroke-width="2"
+                  color="#2E1500"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
