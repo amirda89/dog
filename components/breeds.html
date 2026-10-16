@@ -7,7 +7,7 @@
   </head>
   <body>
     <div
-      class="w-[390px] mx-auto bg-[#F6FBF6] font-[Plus Jakarta Sans] xl:w-[1280px]"
+      class="w-[390px] mx-auto bg-[#F6FBF6] font-[Plus Jakarta Sans] xl:w-[1280px] dark:bg-black"
     >
       <div
         class="w-full rounded-t-4xl bg-[#F0F5F0] px-[24px] py-[32px] xl:w-[1280px] xl:rounded-none xl:px-[48px] xl:py-[64px] dark:bg-[rgba(12,12,12,0.9)] dark:py-10 dark:px-8"
@@ -98,7 +98,9 @@
             Filter
           </div>
         </div>
-        <div class="flex gap-2 overflow-hidden items-center">
+        <div
+          class="flex gap-2 overflow-hidden items-center whitespace-nowrap overflow-x-scroll"
+        >
           <p
             class="uppercase hidden xl:flex pr-2 font-medium text-[11px] leading-[14px] tracking-normal text-[#887364] items-center dark:hidden"
           >
@@ -136,7 +138,7 @@
           </div>
         </div>
         <div
-          class="bg-[rgba(255,220,193,0.6)] flex items-center justify-between p-[14px] mt-5 xl:mt-12 xl:rounded-2xl xl:bg-[#FFDCC1] dark:mt-6 dark:bg-[#1E201F] dark:shadow-md"
+          class="bg-[rgba(255,220,193,0.6)] flex items-center justify-between p-[14px] mt-5 xl:mt-12 xl:rounded-2xl xl:bg-[#FFDCC1] xl:dark:mt-6 dark:bg-[#1E201F] dark:shadow-md"
         >
           <div class="flex items-center gap-4">
             <div
@@ -172,7 +174,7 @@
                   top pick
                 </div>
                 <div
-                  class="hidden dark:flex py-1 px-2 bg-[#333534] rounded-3xl text-[#C3C8C2] text-[11px] leading-[14px] tracking-normal font-medium"
+                  class="hidden xl:dark:flex py-1 px-2 bg-[#333534] rounded-3xl text-[#C3C8C2] text-[11px] leading-[14px] tracking-normal font-medium"
                 >
                   Great with Kids
                 </div>
@@ -211,13 +213,13 @@
           </div>
           <div class="hidden dark:flex items-center w-[260px] gap-4">
             <div
-              class="flex items-center gap-2 capitalize text-[12px] leading-[16px] tracking-normal text-[#D8C3AD] font-medium"
+              class="xl:dark:flex hidden items-center gap-2 capitalize text-[12px] leading-[16px] tracking-normal text-[#D8C3AD] font-medium"
             >
               <span class="w-[8px] h-[8px] bg-[#F59E0B] rounded-full"></span>
               high trainability
             </div>
             <div
-              class="capitalize bg-[#282A29] px-4 py-2 rounded-3xl text-[#FFC174] text-[12px] leading-[16px] tracking-normal"
+              class="capitalize bg-[#282A29] px-4 py-2 rounded-3xl text-[#FFC174] text-[12px] leading-[16px] tracking-normal xl:dark:flex hidden"
             >
               read breed guide
             </div>
@@ -225,17 +227,13 @@
         </div>
         <div class="xl:flex justify-between gap-4 mt-10">
           <div
-            class="bg-white shadow-[0_1px_2px_#0000000D] mt-5 xl:mt-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] dark:h-[400px]"
+            class="bg-white shadow-[0_1px_2px_#0000000D] mt-5 xl:mt-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]"
           >
             <div
-              class="relative w-full h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
+              class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
             >
-              <div id="breeds" class="absolute inset-0">
-                <img
-                  src="../assets/sunny.jpg"
-                  alt="dog"
-                  class="w-full h-full object-cover"
-                />
+              <div id="breedImage1" class="absolute inset-0 overflow-hidden">
+                <!-- GENERATED -->
               </div>
               <div
                 class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]"
@@ -263,7 +261,7 @@
                   1.4k smiles
                 </div>
                 <div
-                  class="hidden dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
+                  class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
                 >
                   2 years old
                 </div>
@@ -319,17 +317,13 @@
           </div>
 
           <div
-            class="bg-white shadow-[0_1px_2px_#0000000D] my-[20px] xl:m-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] dark:h-[400px]"
+            class="bg-white shadow-[0_1px_2px_#0000000D] my-[20px] xl:m-0 xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]"
           >
             <div
-              class="relative w-full h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
+              class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
             >
-              <div id="breeds" class="absolute inset-0">
-                <img
-                  src="../assets/sunny.jpg"
-                  alt="dog"
-                  class="w-full h-full object-cover"
-                />
+              <div id="breedImage2" class="absolute inset-0">
+                <!-- GENERATED -->
               </div>
               <div
                 class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]"
@@ -357,7 +351,7 @@
                   2.1k smiles
                 </div>
                 <div
-                  class="hidden dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
+                  class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
                 >
                   1.5 years old
                 </div>
@@ -413,17 +407,13 @@
           </div>
 
           <div
-            class="bg-white shadow-[0_1px_2px_#0000000D] xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] dark:h-[400px]"
+            class="bg-white shadow-[0_1px_2px_#0000000D] xl:w-1/3 xl:p-4 xl:rounded-[16px] dark:rounded-[32px] dark:bg-[#1E201F] xl:dark:h-[400px]"
           >
             <div
-              class="relative w-full h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
+              class="relative w-full bg-cover bg-center h-[256px] xl:rounded-[48px] overflow-hidden xl:h-[346px] dark:rounded-[32px] dark:h-[256px]"
             >
-              <div id="breeds" class="absolute inset-0">
-                <img
-                  src="../assets/sunny.jpg"
-                  alt="dog"
-                  class="w-full h-full object-cover"
-                />
+              <div id="breedImage3" class="absolute inset-0">
+                <!-- GENERATED -->
               </div>
               <div
                 class="px-[10px] rounded-3xl bg-[rgba(255,255,255,0.9)] backdrop-blur-[12px] py-[4px] text-[11px] leading-[14px] tracking-normal text-[#181D1A] absolute top-3 left-3 font-medium dark:bg-[rgba(13,15,14,0.8)] dark:text-[#E2E3E0]"
@@ -451,7 +441,7 @@
                   3.8k smiles
                 </div>
                 <div
-                  class="hidden dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
+                  class="hidden xl:dark:flex capitalize text-[#FFC174] font-medium text-[11px] leading-[14px] items-center"
                 >
                   2 years old
                 </div>
@@ -508,5 +498,6 @@
         </div>
       </div>
     </div>
+    <script src="./breeds.js"></script>
   </body>
 </html>
